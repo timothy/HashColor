@@ -18,6 +18,9 @@ public class ColorHash {
 
     public static HashMap<String, Color> ColorHash = new HashMap();
 
+    /**
+     * Added all needed values to the HashMap
+     */
     public ColorHash() {
         ColorHash.put("black", Color.black);
         ColorHash.put("blue", Color.blue);
