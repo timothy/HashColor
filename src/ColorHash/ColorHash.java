@@ -61,7 +61,7 @@ public class ColorHash {
 
     /**
      * Total amount of color that the class contains
-     * @return 
+     * @return the total amount of colors.
      */
     public static int size() {
         return ColorHash.size();
