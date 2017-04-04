@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- *
+ * A reusable class for choosing one of the 13 predefined colors in class Color.
  * @author tim
  */
 public class ColorHash {
@@ -34,18 +34,35 @@ public class ColorHash {
         ColorHash.put("white", Color.white);
     }
 
+    /**
+     * Used for retrieving all keys.
+     * @return a set of all keys
+     */
     public static Set getKeySet() {
         return ColorHash.keySet();
     }
 
+    /**
+     * Used to retrieve all Color objects
+     * @return a collection of all color objects
+     */
     public static Collection<Color> getColorCollection() {
         return ColorHash.values();
     }
 
+    /**
+     * Get a specified color.
+     * @param key the string value of the desired return color
+     * @return the color that was specified in the string value
+     */
     public static Color getColor(String key) {
         return ColorHash.get(key);
     }
 
+    /**
+     * Total amount of color that the class contains
+     * @return 
+     */
     public static int size() {
         return ColorHash.size();
     }
